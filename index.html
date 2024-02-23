@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+  <form class="quiz">
+    <div class="quiz__inner">
+      <!-- Customized Question 1 -->
+      <div data-question="1" class="quiz__step--1 quiz__step--current quiz__step">
+        <div class="question__emoji">🌃</div>
+        <h1 class="quiz__question">Would you like to pick a standard CV or go for a custom design (recommended)?</h1>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="design_minimalist" name="design" value="Standard">
+          <label class="answer__label" for="design_minimalist">Standard CV</label>
+        </div>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="design_creative" name="design" value="Custom">
+          <label class="answer__label" for="design_creative">Custom Design</label>
+        </div>
+      </div>
+      <!-- Customized Question 2 -->
+      <div data-question="2" class="quiz__step--2 quiz__step">
+        <div class="question__emoji">🎨</div>
+        <h1 class="quiz__question">How do you envision your ideal resume?</h1>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="color_Minimalistic" name="color" value="Minimalistic">
+          <label class="answer__label" for="color_Minimalistic">Minimalistic</label>
+        </div>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="color_pastel" name="color" value="Creative">
+          <label class="answer__label" for="color_pastel">Creative</label>
+        </div>
+        
+      </div>
+      <!-- Customized Question 3 -->
+      <div data-question="3" class="quiz__step--3 quiz__step">
+        <div class="question__emoji">🦚</div>
+        <h1 class="quiz__question">You've chosen the path of elegant simplicity. What's the core of your minimalist dream?</h1>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="section_experience" name="section" value="Professional and Sleek">
+          <label class="answer__label" for="section_experience">Professional and Sleek</label>
+        </div>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="section_education" name="section" value="Blue">
+          <label class="answer__label" for="section_education">Blue and Bold</label>
+        </div>
+      </div>
+      <!-- Customized Question 4 -->
+      <div data-question="4" class="quiz__step--4 quiz__step">
+        <div class="question__emoji">☄️</div>
+        <h1 class="quiz__question">For a creative style, do you prefer clean or bold?</h1>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="format_single" name="format" value="Innovative and Clean">
+          <label class="answer__label" for="format_single">Innovative and Clean</label>
+        </div>
+        <div class="answer">
+          <input class="answer__input" type="radio" id="format_two" name="format" value="Immersive and Artistic">
+          <label class="answer__label" for="format_two">Immersive and Artistic</label>
+        </div>
+      </div>
+      <!-- Summary Section -->
+      <div data-question="5" class="quiz__step--5 quiz__step quiz__summary">
+        <div class="question__emoji">📽️</div>
+        <h1 class="quiz__question">Thank you</h1>
+        <div id="summary"></div>
+        <div class="submit__container">
+          <a href="#" class="submit">CV</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<footer class="bottom">
+  <section class="bottom__container">
+    <div class="progress">
+      <div class="progress__inner"></div>
+    </div>
+    <div class="navigation">
+      <div class="navigation__btn navigation__btn--left"><svg width="20" height="20" viewBox="0 0 24 24">
+      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+  </svg></div>
+      <div class="navigation__btn navigation__btn--right"><svg width="20" height="20" viewBox="0 0 24 24">
+    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+  </svg></div>
+    </div>
+  </section>  
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="./script.js"></script>
+</body>
+</html>
